@@ -20,9 +20,9 @@ To address this, we introduce a novel monocular depth estimation framework featu
 
 | Dataset       | Abs-Rel 🔽 | RMSE 🔽   | Notes                                                      |
 | :------------ | :--------- | :-------- | :--------------------------------------------------------- |
-| **KITTI**     | **0.053**  | **2.128** | Excellent performance, especially in distant regions       |
-| **SUN RGB-D** | **0.140**  | **0.417** | Using NYU pre-trained weights, shows strong generalization |
-
+| **KITTI**     | **0.053**  | **2.128** |                                                            |
+| **NYU-Depth** | **0.094**  | **0.329** |                                                            |
+ **SUN RGB-D**  | **0.140**  | **0.417** | Using NYU pre-trained weights, shows strong generalization
 ---
 
 ## 📊 Method Overview
