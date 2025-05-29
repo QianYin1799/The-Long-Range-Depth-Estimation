@@ -77,9 +77,30 @@ pip install future tensorboard
 ---
 
 ## 📂 Dataset Preparation
+📥 Download Links & Instructions:
 
-It is recommended to symlink your datasets to `$MONOCULAR-DEPTH-ESTIMATION-TOOLBOX/data`
+KITTI
 
+Download link: KITTI Depth Prediction Dataset
+
+Unzip the files into data/kitti.
+
+Copy the split files (files starting with kitti) from the splits folder into data/kitti.
+
+NYU
+
+Download link: NYU Depth v2 Google Drive
+
+Additionally download the Standard Test Set (note: this will unzip to folders test and train).
+
+SUNRGB
+
+Download link: SUN RGB-D Dataset
+
+Repeat the same procedure for NYU and SUNRGB datasets.
+
+SUNRGB
+The download link:https://rgbd.cs.princeton.edu/
 **Example Folder Structure:**
 
 ```
