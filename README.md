@@ -36,6 +36,12 @@ Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB &
 
 ---
 
+## 📊 Qualitative Results
+
+ 📷 **\[![image](https://github.com/user-attachments/assets/8d2871ea-8258-4056-9742-5a4b11074995)
+]**
+
+---
 
 ## 📦 Installation
 
@@ -167,12 +173,6 @@ checkpoints/swinl_22k_w7_nyu.pth \
 
 ---
 
-## 📊 Qualitative Results
-
- 📷 **\[![image](https://github.com/user-attachments/assets/8d2871ea-8258-4056-9742-5a4b11074995)
-]**
-
----
 
 ## 📖 Citation
 
