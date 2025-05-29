@@ -104,7 +104,7 @@ The download link:https://rgbd.cs.princeton.edu/
 **Example Folder Structure:**
 
 ```
-monocular-depth-estimation-toolbox
+The-Long-Range-Depth-Estimation
 ├── depth
 ├── tools
 ├── configs
