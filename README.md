@@ -22,18 +22,17 @@ To address this, we introduce a novel monocular depth estimation framework featu
 | :------------ | :--------- | :-------- | :--------------------------------------------------------- |
 | **KITTI**     | **0.053**  | **2.128** |                                                            |
 | **NYU-Depth** | **0.094**  | **0.329** |                                                            |
- **SUN RGB-D**  | **0.140**  | **0.417** | Using NYU pre-trained weights, shows strong generalization
+| **SUN RGB-D** | **0.140**  | **0.417** | Using NYU pre-trained weights, shows strong generalization |
+
 ---
 
-📊 Method Overview
+## 📊 Method Overview
 
-📌 Architecture Overview
+### 📌 Architecture Overview
 
-📷 [![image](https://github.com/user-attachments/assets/2736fe56-3299-4fb9-85aa-364612fc581f)
-]
+📷 ![Framework Overview](docs/framework_overview.png)
 
 Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder
-*Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder*
 
 ---
 
@@ -77,34 +76,29 @@ pip install future tensorboard
 ---
 
 ## 📂 Dataset Preparation
-📥 Download Links & Instructions:
+### 🔹 KITTI
 
-KITTI
+From the official website, download the KITTI dataset. Then unzip the files into `data/kitti`. Finally, copy split files (whose names start with `kitti`) in the `splits` folder into `data/kitti`.
 
-Download link: KITTI Depth Prediction Dataset
+### 🔹 NYU Depth v2
 
-Unzip the files into data/kitti.
+Download from: [Google Drive Link](https://drive.google.com/file/d/1AysroWpfISmm-yRFGBgFTrLy6FjQwvwP/view?usp=sharing)
 
-Copy the split files (files starting with kitti) from the splits folder into data/kitti.
+Then, download the standard test set from the official site:
+[NYU Depth v2 Dataset](https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html)
 
-NYU
+> ⚠️ The downloaded file will unzip into `train` and `test` folders.
 
-Download link: NYU Depth v2 Google Drive
+### 🔹 SUN RGB-D
 
-Additionally download the Standard Test Set (note: this will unzip to folders test and train).
+Download from: [SUNRGBD Official Download](https://rgbd.cs.princeton.edu/)
 
-SUNRGB
+After downloading, place the dataset under `data/SUNRGBD/`.
 
-Download link: SUN RGB-D Dataset
-
-Repeat the same procedure for NYU and SUNRGB datasets.
-
-SUNRGB
-The download link:https://rgbd.cs.princeton.edu/
-**Example Folder Structure:**
+### 🔹 Example Folder Structure:
 
 ```
-The-Long-Range-Depth-Estimation
+monocular-depth-estimation-toolbox
 ├── depth
 ├── tools
 ├── configs
@@ -130,8 +124,6 @@ The-Long-Range-Depth-Estimation
 │   │   ├── split_file.txt
 ```
 
----
-
 ## 🚀 Usage
 
 ### 🏋️ Training
@@ -153,10 +145,10 @@ bash tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
 **Example:**
 
 ```bash
-bash ./tools/dist_train.sh configs/long_rangdepth/swinl_w7_nyu.py 2 --work-dir work_dirs/saves/long_rangedepth/swinl_w7_nyu
+bash ./tools/dist_train.sh configs/long_rangedepth/swinl_w7_nyu.py 2 --work-dir work_dirs/saves/long_rangedepth/swinl_w7_nyu
 ```
 
-### 🧪 Inference & Testing
+### 🦪 Inference & Testing
 
 **Single-GPU Testing:**
 
@@ -176,8 +168,7 @@ checkpoints/swinl_22k_w7_nyu.pth \
 
 ## 📊 Qualitative Results
 
-> 📷 **\[![image](https://github.com/user-attachments/assets/8d2871ea-8258-4056-9742-5a4b11074995)
-]**
+📷 ![Qualitative Results](docs/qualitative_results.png)
 
 ---
 
@@ -207,13 +198,3 @@ For questions and issues, feel free to open an [Issue](https://github.com/your-r
 * [x] Code Refactoring
 * [ ] Add Demonstration Videos
 * [ ] Improve Documentation
-
----
-
-## 📊 Framework Diagram Example
-
-> 📷 ![Framework Overview](docs/framework_overview.png)
-
----
-
-
