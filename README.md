@@ -30,7 +30,8 @@ To address this, we introduce a novel monocular depth estimation framework featu
 
 ### 📌 Architecture Overview
 
-📷 ![Framework Overview](docs/framework_overview.png)
+📷 [![image](https://github.com/user-attachments/assets/2736fe56-3299-4fb9-85aa-364612fc581f)
+]
 
 Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder
 
@@ -98,7 +99,7 @@ After downloading, place the dataset under `data/SUNRGBD/`.
 ### 🔹 Example Folder Structure:
 
 ```
-monocular-depth-estimation-toolbox
+The-Long-Range-Depth-Estimation
 ├── depth
 ├── tools
 ├── configs
@@ -168,7 +169,8 @@ checkpoints/swinl_22k_w7_nyu.pth \
 
 ## 📊 Qualitative Results
 
-📷 ![Qualitative Results](docs/qualitative_results.png)
+ 📷 **\[![image](https://github.com/user-attachments/assets/8d2871ea-8258-4056-9742-5a4b11074995)
+]**
 
 ---
 
