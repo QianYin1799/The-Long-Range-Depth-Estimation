@@ -65,8 +65,8 @@ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11
 
 pip install mmcv-full==1.3.13 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 
-git clone https://github.com/zhyever/Monocular-Depth-Estimation-Toolbox.git
-cd Monocular-Depth-Estimation-Toolbox
+git clone https://github.com/QianYin/The-Long-Range-Depth-Estimation.git
+cd The-Long-Range-Depth-Estimation
 pip install -e .
 
 pip install future tensorboard
