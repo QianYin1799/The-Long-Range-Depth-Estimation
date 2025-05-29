@@ -25,13 +25,14 @@ To address this, we introduce a novel monocular depth estimation framework featu
  **SUN RGB-D**  | **0.140**  | **0.417** | Using NYU pre-trained weights, shows strong generalization
 ---
 
-## 📊 Method Overview
+📊 Method Overview
 
-### 📌 Architecture Overview
+📌 Architecture Overview
 
- > 📷 **\[[image](https://github.com/user-attachments/assets/5d474001-6977-4a11-bc69-af9cef1ca84c)
-]**
+📷 [![image](https://github.com/user-attachments/assets/2736fe56-3299-4fb9-85aa-364612fc581f)
+]
 
+Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder
 *Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder*
 
 ---
@@ -154,7 +155,8 @@ checkpoints/swinl_22k_w7_nyu.pth \
 
 ## 📊 Qualitative Results
 
-> 📷 **\[Insert qualitative result images here]**
+> 📷 **\[![image](https://github.com/user-attachments/assets/8d2871ea-8258-4056-9742-5a4b11074995)
+]**
 
 ---
 
