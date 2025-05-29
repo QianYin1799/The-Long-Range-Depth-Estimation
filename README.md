@@ -130,7 +130,7 @@ bash tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
 **Example:**
 
 ```bash
-bash ./tools/dist_train.sh configs/depthformer/depthformer_swint_w7_nyu.py 2 --work-dir work_dirs/saves/depthformer/depthformer_swint_w7_nyu
+bash ./tools/dist_train.sh configs/long_rangdepth/swinl_w7_nyu.py 2 --work-dir work_dirs/saves/long_rangedepth/swinl_w7_nyu
 ```
 
 ### 🧪 Inference & Testing
@@ -144,9 +144,9 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 **Example:**
 
 ```bash
-python tools/test.py configs/depthformer/depthformer_swinl_22k_w7_nyu.py \
-checkpoints/depthformer_swinl_22k_w7_nyu.pth \
---show-dir depthformer_swinl_22k_w7_nyu_results
+python tools/test.py configs/long_rangedepth/swinl_22k_w7_nyu.py \
+checkpoints/swinl_22k_w7_nyu.pth \
+--show-dir swinl_22k_w7_nyu_results
 ```
 
 ---
