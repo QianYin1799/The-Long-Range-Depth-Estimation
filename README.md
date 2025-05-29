@@ -15,6 +15,16 @@ To address this, we introduce a novel monocular depth estimation framework featu
 **Experimental results** demonstrate superior long-range prediction accuracy on KITTI and SUN RGB-D datasets.
 
 ---
+## 📊 Method Overview
+
+### 📌 Architecture Overview
+
+📷 [![image](https://github.com/user-attachments/assets/2736fe56-3299-4fb9-85aa-364612fc581f)
+]
+
+Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder
+
+---
 
 ## 📊 Benchmark Performance
 
@@ -26,16 +36,6 @@ To address this, we introduce a novel monocular depth estimation framework featu
 
 ---
 
-## 📊 Method Overview
-
-### 📌 Architecture Overview
-
-📷 [![image](https://github.com/user-attachments/assets/2736fe56-3299-4fb9-85aa-364612fc581f)
-]
-
-Illustration: Dual-branch Encoder (CNN + Transformer), CSF Fusion Module, DSUB & MSA-based Decoder
-
----
 
 ## 📦 Installation
 
