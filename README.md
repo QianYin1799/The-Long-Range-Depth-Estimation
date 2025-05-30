@@ -155,7 +155,7 @@ bash tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
 **Example:**
 
 ```bash
-bash ./tools/dist_train.sh configs/long_rangedepth/swinl_w7_nyu.py 2 --work-dir work_dirs/saves/long_rangedepth/swinl_w7_nyu
+bash ./tools/dist_train.sh configs/long_rangedepth/swinl_w7_22k_nyu.py 2 --work-dir work_dirs/saves/long_rangedepth/swinl_w7_22k_nyu
 ```
 
 ### 🦪 Inference & Testing
